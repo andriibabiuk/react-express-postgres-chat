@@ -1,0 +1,30 @@
+{
+	"name": "react-express-postgres-chat",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon --watch backend/src --exec ts-node backend/src/index.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/andriibabiuk/react-express-postgres-chat.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"bugs": {
+		"url": "https://github.com/andriibabiuk/react-express-postgres-chat/issues"
+	},
+	"homepage": "https://github.com/andriibabiuk/react-express-postgres-chat#readme",
+	"devDependencies": {
+		"@types/express": "^5.0.6",
+		"nodemon": "^3.1.14",
+		"ts-node": "^10.9.2",
+		"typescript": "^6.0.3"
+	},
+	"dependencies": {
+		"express": "^5.2.1"
+	}
+}
