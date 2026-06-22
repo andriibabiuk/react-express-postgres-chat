@@ -5,6 +5,7 @@ import messageRoutes from './routes/message.route.js';
 dotenv.config({ path: '../.env' });
 const app = express();
 const PORT = process.env.PORT;
+app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/messages', messageRoutes);
 app.listen(PORT, () => {
