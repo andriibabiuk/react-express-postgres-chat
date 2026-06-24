@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import GenderCheckbox from "../components/GenderCheckbox";
+import { Link } from 'react-router-dom';
+import GenderCheckbox from '../components/GenderCheckbox';
 
 const SignUp = () => {
 	return (
@@ -14,14 +14,22 @@ const SignUp = () => {
 						<label className='label p-2'>
 							<span className='text-base label-text'>Full Name</span>
 						</label>
-						<input type='text' placeholder='John Doe' className='w-full input input-bordered  h-10' />
+						<input
+							type='text'
+							placeholder='John Doe'
+							className='w-full input input-bordered  h-10'
+						/>
 					</div>
 
 					<div>
 						<label className='label p-2 '>
 							<span className='text-base label-text'>Username</span>
 						</label>
-						<input type='text' placeholder='johndoe' className='w-full input input-bordered h-10' />
+						<input
+							type='text'
+							placeholder='johndoe'
+							className='w-full input input-bordered h-10'
+						/>
 					</div>
 
 					<div>
@@ -49,14 +57,16 @@ const SignUp = () => {
 					<GenderCheckbox />
 
 					<Link
-						to={"/login"}
+						to={'/login'}
 						className='text-sm hover:underline hover:text-blue-600 mt-2 inline-block text-white'
 					>
 						Already have an account?
 					</Link>
 
 					<div>
-						<button className='btn btn-block btn-sm mt-2 border border-slate-700'>Sign Up</button>
+						<button className='btn btn-block btn-sm mt-2 border border-slate-700'>
+							Sign Up
+						</button>
 					</div>
 				</form>
 			</div>
