@@ -1,3 +1,4 @@
+import { Toaster } from 'react-hot-toast';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { useAuthContext } from './context/AuthContext';
 import Home from './pages/Home';
@@ -5,7 +6,7 @@ import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 
 function App() {
-	const { authUser, setAuthUser, isLoading } = useAuthContext();
+	const { authUser, isLoading } = useAuthContext();
 	if (isLoading) {
 		return <div>Loading...</div>;
 	}
@@ -25,6 +26,7 @@ function App() {
 					element={!authUser ? <Login /> : <Navigate to={'/'} />}
 				/>
 			</Routes>
+			<Toaster />
 		</div>
 	);
 }
