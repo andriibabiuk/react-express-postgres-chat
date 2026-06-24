@@ -13,6 +13,7 @@ const useSignup = () => {
 	const { setAuthUser } = useAuthContext();
 	const signup = async (inputs: SignUpInputs) => {
 		try {
+			setLoading(true);
 			const res = await fetch('/api/auth/signup', {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
