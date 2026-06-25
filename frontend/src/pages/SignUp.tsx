@@ -17,7 +17,7 @@ const SignUp = () => {
 	const handleCheckboxChange = (gender: Gender) => {
 		setInputs({ ...inputs, gender });
 	};
-	const handleSubmitForm = e => {
+	const handleSubmitForm = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		signup(inputs);
 	};

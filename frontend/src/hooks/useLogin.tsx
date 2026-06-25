@@ -18,7 +18,7 @@ const useLogin = () => {
 				throw new Error(data.error);
 			}
 			setAuthUser(data);
-		} catch (error) {
+		} catch (error: any) {
 			toast.error(error.message);
 			console.error(error.message);
 		} finally {
